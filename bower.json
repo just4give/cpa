@@ -1,0 +1,35 @@
+{
+  "name": "cpa",
+  "version": "0.0.1",
+  "description": "corporate pilot association",
+  "main": "app.js",
+  "keywords": [
+    "corporate",
+    "pilot"
+  ],
+  "authors": [
+    "Mithun D."
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "angular-touch": "~1.4.8",
+    "angular-ui-router": "~0.2.15",
+    "font-awesome": "~4.5.0",
+    "angular-bootstrap": "~0.14.3",
+    "angular-confirm-modal": "~1.2.1",
+    "angular-local-storage": "~0.2.3",
+    "animate.css": "~3.5.0",
+    "angularjs-toaster": "~0.4.181"
+  }
+}

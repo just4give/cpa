@@ -1,0 +1,275 @@
+@import url("prettyPhoto.css") screen;
+@import url("hoverex-all.css") screen;
+html,body, {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #fff;
+	background-repeat: repeat;
+	color: #2D2822;
+	font-weight: 400;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+	padding-top: 80px;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.pad-top-10 {
+	padding-top: 10px;
+}
+.fa-facebook-square, .fa-linkedin-square {
+	margin-top: 10px;
+}
+.fa-link {
+	color: #fff;
+}
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.3em;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+}
+p {
+	font-size: 1.1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+hr {
+	margin: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+}
+/* This is added to fix issue with menu only working once on mobile */
+.collapse {
+  position:relative;
+  height:0;
+  overflow:hidden;
+  -webkit-transition:height 0.35s ease;
+  -moz-transition:height 0.35s ease;
+  -o-transition:height 0.35s ease;
+  transition:height 0.35s ease;
+}
+.collapse.in {
+  height:auto;
+}
+/* End mobile menu fix */
+.navbar .fa {
+	color: #fff;
+}
+.navbar {
+	border: 0;
+	background-color: #2D2822;
+	border-radius: 0px;
+	margin: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 15px;
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,.3);
+	-moz-box-shadow: 0px 1px 4px rgba(0,0,0,.3);
+	box-shadow: 0px 1px 4px rgba(0,0,0,.3);
+}
+.navbar .nav > li > a:hover {
+	color:  #ababab;
+}
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-brand {
+	color: #fff;
+	margin-top: 10px;
+}
+.navbar-default .navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+.navbar-collapse  {
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ababab;
+  background-color: inherit;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+	color:  #fff;
+	background-color: inherit;
+}
+.row {
+	margin: 0;
+	padding: 0;
+}
+.banner {
+	background-color: #7f2125;
+	background-image: url('../images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 350px;
+	padding: 20px;
+	padding-top: 40px;
+}
+.banner h2 {
+	font-size: 2em;
+	text-align: left;
+	font-weight: 600;
+	color: #fff;
+	padding-top: 20px;
+}
+.banner h3 {
+	font-size: 1.6em;
+	font-weight: 400;
+	color: #fff;
+	padding-top: 20px;
+}
+.banner h4 {
+	font-size: 1.5em;
+	padding: 5px;
+	color: #fff;
+}
+.row-white {
+	background-color: #fff;
+	padding: 40px;
+}
+.row-white h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2em;
+	color: #ababab;
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.row-alt {
+	background-color: #f4f4f4;
+	padding: 40px;
+}
+.margin-right-20 {
+	margin-right: 20px;
+}
+.pad-top-30 {
+	padding-top: 30px;
+}
+.btn-default {
+	background-color: #ababab;
+	border-color: #ababab;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: #fff;
+	padding-top: 11px;
+}
+.btn-default:hover {
+	background-color: #7f2125;
+	border-color: #7f2125;
+	color: #fff;
+}
+.required {
+	font-weight: bold;
+	color: #f00;
+}
+.alert-danger {
+	margin-top: 10px;
+	padding-left: 15px;
+	padding-top: 8px;
+	font-size: .9em;
+	height: 40px;
+}
+.bubble {
+  margin: 20px;
+  margin-right: 20;
+  margin-bottom: 40px;
+  padding: 30px;
+  position: relative;
+  background-color: #f4f4f4;
+  color: #232323;
+  border-radius: 3px;
+  border-color: #efefe4;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: justify;
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border-top: 15px solid;
+  border-top-color: #f4f4f4; 
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent; 
+}
+.footer {
+	padding: 30px;
+	margin: 0;
+	background-color: #2D2822;
+	background-image: url('../images/background-black.jpg');
+	color: #fff;
+}
+.center-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/* Portfolio Wrap */
+#projects {
+	display: block;
+	background-color: #f4f4f4;
+}
+
+#projects h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em;
+	font-weight: 700;
+	padding: 20px;
+	padding-left: 45px;
+}
+
+.portfolio {
+	padding:0 !important;
+	margin:0 !important;
+	display:block;
+}
+.portfolio-item .title:before {border-radius:0; display:none}
+.portfolio-item p {margin:0px 0 30px;}
+.portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
+
+/* Hovwer effects for images */
+.tpl6 h3
+{
+	color:#fff;
+	margin:0;
+	padding:40px 5px 0;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.tpl6 .dmbutton
+{
+	display:inline-block;
+	margin:30px 5px 20px 5px;
+	font-size:13px;
+}
+
+.tpl6 .bg
+{
+	height:100%;
+	width:100%;
+	background-color:#7f2125;
+	background-color:rgba(127,33,37,.8);
+	text-align:center;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
