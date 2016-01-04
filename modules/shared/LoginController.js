@@ -1,7 +1,7 @@
 /**
  * Created by mithundas on 1/3/16.
  */
-appModule.controller('authController',["$scope","$rootScope","$log","toaster", function($scope,$rootScope,$log,toaster){
+appModule.controller('loginController',["$scope","$rootScope","$log","toaster", function($scope,$rootScope,$log,toaster){
     $log.debug('authController loaded');
     $scope.login = function(){
 

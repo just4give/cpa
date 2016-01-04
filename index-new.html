@@ -46,7 +46,7 @@
 
 	<toaster-container toaster-options="{'close-button': true}"></toaster-container>
 <!--/start offcanvas navbar -->	
-    <div id="offcanvas-menu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" ng-controller="authController">
+    <div id="offcanvas-menu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" ng-controller="loginController">
 	    <div class="navmenu-logo text-center">
 			<img alt="web design madcam designs" src="images/logo.png" class="logo"/>
 	    </div>
@@ -59,22 +59,22 @@
 			<li class="dropdown">
             	<a class="dropdown-toggle" href="#" data-toggle="dropdown">sign in<strong class="caret"></strong></a>
 					<div class="dropdown-menu" style="padding: 15px; width:300px">
-						<form name="flogin1" >
-							<div class="form-group">
+						<form name="flogin">
+							<div class="form-group" ng-class="{ 'has-error': flogin.email.$invalid }">
 								<label class="sr-only" for="email">Email address</label>
-								<input type="email" class="form-control" id="email" placeholder="Enter email">
-					  		</div>
-					  		<div class="form-group">
-					  			<label class="sr-only" for="password">Password</label>
-					  			<input type="password" class="form-control" id="password" placeholder="Password">
-					  		</div>
-					  		<div class="checkbox">
-					  			<label>
-					  			<input type="checkbox"> remember me
-					  			</label>
-					  		</div>				  
-					  		<button class="btn btn-login btn-block" ng-click="login()" >Sign In</button>
-			  			</form>
+								<input type="email" name="email" ng-model="login.email" class="form-control" id="email" required placeholder="Enter email">
+							</div>
+							<div class="form-group" ng-class="{ 'has-error': flogin.password.$invalid }">
+								<label class="sr-only" for="password">Password</label>
+								<input type="password" name="password" ng-model="login.password" class="form-control" id="password" required placeholder="Password">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> remember me
+								</label>
+							</div>
+							<button class="btn btn-login btn-block" ng-click="login()" ng-disabled="flogin.$invalid">Sign In</button>
+						</form>
             		</div>
           </li>	
 
@@ -93,7 +93,7 @@
 			<span class="icon-bar"></span>
 			</button>
 		</div>
-    	<div class="collapse navbar-collapse" ng-controller="authController"><!--/this collapses menu for mobile -->
+    	<div class="collapse navbar-collapse" ng-controller="loginController"><!--/this collapses menu for mobile -->
     	<ul id="nav" class="nav navbar-nav navbar-right">
 			<li class="active"><a href="#home">home</a></li>
 			<li><a href="#about">about</a></li>
@@ -173,7 +173,7 @@
 						</ul>
 					</div>
 				</div>
-					<div class="col-sm-6 margin-bottom-30">
+			    <div class="col-sm-6 margin-bottom-30">
 						<div class="box">
 							<div class="box-header">
 								<h4>FLIGHT DEPARTMENT</h4>
@@ -186,10 +186,10 @@
 								<li><i class="fa fa-li fa-check-square-o"></i> All pilots in flight department receive individual membership</li>
 							</ul>
 						</div>
-					</div>        
-    			</div>
-        </div>
-</div>
+				</div>
+    	</div>
+    </div>
+
 <!--/end section -->
 
 <!--/start section -->
@@ -206,9 +206,8 @@
 	        <a href=""><button type="button" class="btn btn-default btn-block margin-bottom-30 btn-long-txt">Flight Department Registration Form</button></a>
         </div>
     </div>
-	        
-		</div>
-    </div>
+
+
 <!--/end section -->
 
 <!--/start section -->
@@ -237,8 +236,7 @@
     </div>
 <!--/end section -->
 
-        
-</div>
+
 <!--/end container -->  
 
          
@@ -297,7 +295,8 @@
 	<script src="modules/app/AppModule.js"></script>
 	<script src="modules/app/AppConfig.js"></script>
 	<script src="modules/app/HomeController.js"></script>
-	<script src="modules/auth/AuthController.js"></script>
+	<script src="modules/shared/LoginController.js"></script>
+	<script src="modules/shared/RegistrationController.js"></script>
 
 	<script src="js/wow.min.js"></script>
 	<script src="js/jasny-bootstrap.min.js"></script><!--/used for offscreen mobile menu -->
