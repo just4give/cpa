@@ -44,7 +44,7 @@
 
 <body data-target="#topnav">
 
-	<toaster-container></toaster-container>
+	<toaster-container toaster-options="{'close-button': true}"></toaster-container>
 <!--/start offcanvas navbar -->	
     <div id="offcanvas-menu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" ng-controller="authController">
 	    <div class="navmenu-logo text-center">
@@ -104,20 +104,20 @@
             	<a class="dropdown-toggle " id="login-menu" href="#" data-toggle="dropdown">sign in<strong class="caret"></strong></a>
 					<div class="dropdown-menu" style="padding: 15px; width:300px">
 						<form name="flogin">
-							<div class="form-group">
+							<div class="form-group" ng-class="{ 'has-error': flogin.email.$invalid }">
 								<label class="sr-only" for="email2">Email address</label>
-								<input type="email" class="form-control" id="email2" placeholder="Enter email">
+								<input type="email" name="email" ng-model="login.email" class="form-control" id="email2" required placeholder="Enter email">
 							</div>
-							<div class="form-group">
+							<div class="form-group" ng-class="{ 'has-error': flogin.password.$invalid }">
 								<label class="sr-only" for="password2">Password</label>
-								<input type="password" class="form-control" id="password2" placeholder="Password">
+								<input type="password" name="password" ng-model="login.password" class="form-control" id="password2" required placeholder="Password">
 							</div>
 							<div class="checkbox">
 								<label>
 									<input type="checkbox"> remember me
 								</label>
 							</div>
-							<button class="btn btn-login btn-block" ng-click="login()" >Sign In</button>
+							<button class="btn btn-login btn-block" ng-click="login()" ng-disabled="flogin.$invalid">Sign In</button>
 						</form>
             		</div>
           </li>
