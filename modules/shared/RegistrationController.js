@@ -4,6 +4,13 @@
 appModule.controller('registrationController',["$scope","$rootScope","$log","toaster", function($scope,$rootScope,$log,toaster){
     $log.debug('registrationController loaded');
 
+    $scope.newUser ={
+        singleHour:0,
+        mpristonHour:0,
+        mjetHour:0,
+        instrumentHour:0,
+        otherHour:0
+    }
     $scope.createUser = function(){
 
        // $('#login-menu').dropdown('toggle');
@@ -12,5 +19,12 @@ appModule.controller('registrationController',["$scope","$rootScope","$log","toa
         $rootScope.bootstrappedUser = {firstName:"John", lastName:"Smith"};
     }
 
+    $scope.totalHour = function(){
+        return $scope.newUser.singleHour
+            +$scope.newUser.mpristonHour
+            +$scope.newUser.mjetHour
+            +$scope.newUser.instrumentHour
+            +$scope.newUser.otherHour;
+    }
 
 }]);

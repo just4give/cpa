@@ -2,7 +2,7 @@
 [class*="icon-"] {
   background: none;
 }
-html,body, {
+html,body {
   height: 100%;
   /* The html and body elements cannot have any padding or margin. */
 }
@@ -468,9 +468,26 @@ blockquote {
         height: 100% !important;
     }
 
+	/* added by MD */
 	.toast-top-right{
 		top: 100px;;
 	}
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		/* display: none; <- Crashes Chrome on hover */
+		-webkit-appearance: none;
+		margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+	}
+
+	.page-view.ng-enter {
+		animation: fadeInRight .35s linear;
+	}
+
+	.page-view.ng-leave {
+		animation: fadeOutLeft .35s linear;
+	}
+	/* added by MD */
+
  /* The code below the breakpoint for when the bootstrap navbar collapses */
 @media (max-width: 1080px) {
     .navbar-header {

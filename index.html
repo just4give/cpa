@@ -1,31 +1,32 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="cpa">
   <head>
-    <meta charset="utf-8">
-    <title>corporate pilots association | CPA</title>
+    <title>Corporate Pilots Association</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pilots services.">
-    <meta name="keywords" content="coprorate airplanes, pilots, mass" />
+    <meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="madcamdesigns.com">
+    
+    <!-- linked css files -->
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">-->
 
-    <!-- style sheet links -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jasny-bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/cpa-soon.css" rel="stylesheet">
-    
-    <!--google fonts links -->
-	<link href='https://fonts.googleapis.com/css?family=Lobster+Two:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Cabin:400,500' rel='stylesheet' type='text/css'>
-    
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/mcdfavicon144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/mcdfavicon114.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/mcdfavicon72.png">
-    <link rel="apple-touch-icon-precomposed" href="images/mcdfavicon.png">
-    <link rel="shortcut icon" href="images/mcdfavicon.png">
-   
- <!--/start google analytics -->   
+    <!--<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">-->
+
+    <!--<link href="css/animate.css" rel="stylesheet" media="screen">-->
+	
+	<!-- linked google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+	  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/jasny-bootstrap.min.css" rel="stylesheet"><!--/used for offscreen mobile menu -->
+	  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	  <link href="vendor/angular/angular-csp.css" rel="stylesheet">
+	  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+	  <link href="vendor/angularjs-toaster/toaster.min.css" rel="stylesheet">
+
+	  <link href="css/cpa.css" rel="stylesheet" media="screen">
+  
+<!--/start google analytics --> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -36,77 +37,171 @@
   ga('send', 'pageview');
 
 </script>
- <!--/end google analytics -->
+<!--/end google analytics --> 
+ 
+ 
+</head>
 
-  </head>
+<body data-target="#topnav">
 
-  <body>
-  
-  <!--/start offcanvas navbar -->	
-    <div id="offcanvas-menu" class="navmenu navmenu-default navmenu-fixed-right offcanvas">
-      <img alt="web design logo madcam designs" src="images/logo-cubes.png" class="logocube"/>
+	<toaster-container toaster-options="{'close-button': true}"></toaster-container>
+<!--/start offcanvas navbar -->	
+    <div id="offcanvas-menu" class="navmenu navmenu-default navmenu-fixed-right offcanvas" ng-controller="loginController">
+	    <div class="navmenu-logo text-center">
+			<img alt="web design madcam designs" src="images/logo.png" class="logo"/>
+	    </div>
     	<ul class="nav navmenu-nav">
-        <li class="active"><a href="#about" data-toggle="offcanvas" data-target="#offcanvas-menu">HOME</a></li>
-        <li><a href="#approach" data-toggle="offcanvas" data-target="#offcanvas-menu">ABOUT</a></li>
-		<li><a href="#services" data-toggle="offcanvas" data-target="#offcanvas-menu">SERVICES</a></li>
-		<li><a href="#contact" data-toggle="offcanvas" data-target="#offcanvas-menu">CONTACT</a></li>
-		<li><a href="#portfolio" data-toggle="offcanvas" data-target="#offcanvas-menu">PORTFOLIO</a></li>
+		<li class="active"><a href="#home">home</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#memberships">membership</a></li>
+			<li><a href="#join">how to join</a></li>
+			<li><a href="#letstalk">let's talk</a></li>
+			<li class="dropdown">
+            	<a class="dropdown-toggle" href="#" data-toggle="dropdown">sign in<strong class="caret"></strong></a>
+					<div class="dropdown-menu" style="padding: 15px; width:300px">
+						<form name="flogin">
+							<div class="form-group" ng-class="{ 'has-error': flogin.email.$invalid }">
+								<label class="sr-only" for="email">Email address</label>
+								<input type="email" name="email" ng-model="login.email" class="form-control" id="email" required placeholder="Enter email">
+							</div>
+							<div class="form-group" ng-class="{ 'has-error': flogin.password.$invalid }">
+								<label class="sr-only" for="password">Password</label>
+								<input type="password" name="password" ng-model="login.password" class="form-control" id="password" required placeholder="Password">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> remember me
+								</label>
+							</div>
+							<button class="btn btn-login btn-block" ng-click="login()" ng-disabled="flogin.$invalid">Sign In</button>
+						</form>
+            		</div>
+          </li>	
+
       </ul>
     </div>
 <!--/end offcanvas navbar -->	
-  
-<!--/start containter -->
-<div class="container">
-	
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1 pad-top-60">
-			<img src="images/logo.png" class="img-responsive img-center"/>
+
+<!--/start navbar -->	  
+	  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	  <img class="pull-left logo margin-left-15 margin-right-20 margin-top-5" src="images/logo.png"/>
+	  	<div class="navbar-header"><!--/this is mobile menu-->
+			<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
 		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<h1 class="text-center">Landing here <span class="span-h2">February 2016</span></h1>
-		</div>
-	</div>
-	<div class="row content-area margin-top-20">
-		<div class="col-sm-5">
-			<h3>Contact Us</h3>
-			<address>
-			<strong>Corporate Pilots Association</strong><br>
-			200 Hanscom Drive, Suite 322<br>
-			P.O. Box 685<br>
-			Bedford, MA 01730<br>
-			<i class="fa fa-phone fa-fw"></i> 781.860.7403<br>
-			<i class="fa fa-fax fa-fw"></i> 781.860.5105<br>
-			<a href="mailto:info@cpa.aero"><button type="button" class="btn btn-default margin-top-20">Email Us</button></a>
-			</address>
-		</div>
-		<div class="col-sm-7 text-center">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.3346142846904!2d-71.29338704874237!3d42.46317153647378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39bfecd426429%3A0x9c4141beea34d6ed!2sCorporate+Pilots+Association!5e0!3m2!1sen!2sus!4v1450144761291" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    	<div class="collapse navbar-collapse" ng-controller="loginController"><!--/this collapses menu for mobile -->
+    	<ul id="nav" class="nav navbar-nav navbar-right">
+			<li class="active"><a href="#home">home</a></li>
+			<li><a href="#about">about</a></li>
+			<li><a href="#memberships">membership</a></li>
+			<li><a href="#join">how to join</a></li>
+			<li><a href="#letstalk">let's talk</a></li>
+			<li class="dropdown " ng-show="!loggedIn">
+            	<a class="dropdown-toggle " id="login-menu" href="#" data-toggle="dropdown">sign in<strong class="caret"></strong></a>
+					<div class="dropdown-menu" style="padding: 15px; width:300px">
+						<form name="flogin">
+							<div class="form-group" ng-class="{ 'has-error': flogin.email.$invalid }">
+								<label class="sr-only" for="email2">Email address</label>
+								<input type="email" name="email" ng-model="login.email" class="form-control" id="email2" required placeholder="Enter email">
+							</div>
+							<div class="form-group" ng-class="{ 'has-error': flogin.password.$invalid }">
+								<label class="sr-only" for="password2">Password</label>
+								<input type="password" name="password" ng-model="login.password" class="form-control" id="password2" required placeholder="Password">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> remember me
+								</label>
+							</div>
+							<button class="btn btn-login btn-block" ng-click="login()" ng-disabled="flogin.$invalid">Sign In</button>
+						</form>
+            		</div>
+          </li>
+		<li class="dropdown " ng-show="loggedIn">
+			<a class="dropdown-toggle " href="#" data-toggle="dropdown">{{bootstrappedUser.firstName}}<strong class="caret"></strong></a>
+			<ul class="dropdown-menu" style="padding: 15px; width:300px">
 
-		</div>
-	</div>
+					<li><button class="btn btn-link">My Profile</button></li>
+					<li><button  class="btn btn-link" ng-click="logout()">Logout</button></li>
+
+			</ul>
+		</li>
+		</ul>
+    	</div>
+    	</div>
+<!--/end navbar -->
+
+<div ui-view class="page-view"></div>
+
+<!--/end container -->  
+
+         
+<!-- start footer section -->  
+  	<div class="row footer">
+	  	<div class="row">
+		  	<div class="col-sm-12">
+     			<img alt="primrose companies logo" class="hidden-xs hidden-sm logo-sm center-img" src="images/logo.png">
+			</div>
+    		<div class="col-sm-12 text-center pad-top-20">
+				<address>
+					<address>
+						<strong>Corporate Pilots Association</strong><br>
+						200 Hanscom Drive, Suite 322 - P.O. Box 685 - Bedford, MA 01730<br>
+						<i class="fa fa-phone fa-fw"></i> 781.860.7403  <i class="fa fa-fax fa-fw"></i> 781.860.5105 <i class="fa fa-envelope fa-fw"></i><a href="mailto:info@cpa.aero"> Email Us</a><br>
+						
+					</address>
+    		</div>
+	  	</div>
+	  	<div class="row">
+			<div class="col-xs-12">
+				<a href="http://www.madcamdesigns.com/" rel="author"><img alt="madcam designs" class="center-img" src="images/madcam-logo.png"></a>
+			</div>
+			<div class="col-sm-4">
+				<span id="top-link-block" class="hidden">
+					<a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+					<i class="fa fa-angle-double-up fa-lg"></i></a>
+				</span>
+			</div>
+	  	</div>
+	</div> 
+<!-- end footer section -->  
+
+
+    
+	<!-- linked javascript files -->
+   <!-- <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>-->
+
+
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 
+	<script src="vendor/angular/angular.min.js"></script>
+	<script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="vendor/angular-animate/angular-animate.min.js"></script>
+	<script src="vendor/angular-touch/angular-touch.min.js"></script>
+	<script src="vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	<script src="vendor/angular-confirm-modal/angular-confirm.js"></script>
+	<script src="vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
+	<script src="vendor/angularjs-toaster/toaster.min.js"></script>
 
+	<script src="modules/app/AppModule.js"></script>
+	<script src="modules/app/AppConfig.js"></script>
+	<script src="modules/app/HomeController.js"></script>
+	<script src="modules/shared/LoginController.js"></script>
+	<script src="modules/shared/RegistrationController.js"></script>
 
-		
-		
-</div>
-<!--/end container -->
-	
-	
+	<script src="js/wow.min.js"></script>
+	<script src="js/jasny-bootstrap.min.js"></script><!--/used for offscreen mobile menu -->
+	<script src="js/cpa.js"></script>
+	<script src="js/jquery.touchwipe.min.js"/>
 
-	
-<!-- javascript links -->
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jasny-bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-	<script src="js/contact.js"></script>
-	<script src="js/madcam.js"></script>
-
-  </body>
+</body>
 </html>
