@@ -1,8 +1,12 @@
 /**
  * Created by mithundas on 1/3/16.
  */
-appModule.controller('registrationController',["$scope","$rootScope","$log","toaster", function($scope,$rootScope,$log,toaster){
+appModule.controller('registrationController',["$scope","$rootScope","$log","toaster","$location", "$anchorScroll",
+    function($scope,$rootScope,$log,toaster,$location, $anchorScroll){
     $log.debug('registrationController loaded');
+
+    $location.hash('body');
+    $anchorScroll();
 
     $scope.newUser ={
         singleHour:0,
