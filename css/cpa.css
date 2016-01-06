@@ -182,8 +182,8 @@ hr {
 	background-color: #fff;
 	border-color: #dedede;
 	border-style: solid;
-	border-width: 1px;
-	border-radius: 3px;
+	border-width: 0;
+	border-radius: 1px;
 	width: 100%;
 	height: 350px;
 	padding: 0;
@@ -211,6 +211,7 @@ hr {
 	margin-top: 0;
 	font-weight: 400;
 	font-size: .8em;
+    margin-bottom: 5px;
 }
 .box p {
 	font-size: .8em;
@@ -277,6 +278,12 @@ blockquote {
 .row-alt {
 	background-color: #f4f4f4;
 	padding: 40px;
+}
+.row-membership {
+    background-image: url('../images/stock-jet-members.jpg');
+	background-size:     cover;                  
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 .margin-right-20 {
 	margin-right: 20px;
