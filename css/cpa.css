@@ -280,6 +280,7 @@ blockquote {
 	padding: 40px;
 }
 .row-membership {
+    background: linear-gradient(black, white);
     background-image: url('../images/stock-jet-members.jpg');
 	background-size:     cover;                  
     background-repeat:   no-repeat;
