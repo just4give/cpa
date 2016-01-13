@@ -52,8 +52,13 @@
 	    </div>
     	<ul class="nav navmenu-nav">
 		<li class="active"><a href="#home">home</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="#memberships">membership</a></li>
+			<li class="dropdown">
+			 	<a href="programs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">member services <span class="caret"></span></a>
+			 	<ul class="dropdown-menu" role="menu">
+			 		<li><a href="birthdays.html">BIRTHDAY PARTIES</a></li>
+			 		<li><a href="amusements.html">FRIDAY FUNHOUSE</a></li>
+          		</ul>
+		  	</li>
 			<li><a href="#bylays.html">bylaws</a></li>
 			<li><a href="#join">how to join</a></li>
 			<li><a href="#letstalk">let's talk</a></li>
@@ -97,10 +102,37 @@
     	<div class="collapse navbar-collapse" ng-controller="loginController"><!--/this collapses menu for mobile -->
     	<ul id="nav" class="nav navbar-nav navbar-right">
 			<li class="active"><a href="#home">home</a></li>
-			<li><a href="about.html">about</a></li>
-			<li><a href="#memberships">membership</a></li>
+			<li><a href="#home">about</a></li>
+			<li class="dropdown">
+			 	<a href="programs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">member services <span class="caret"></span></a>
+			 	<ul class="dropdown-menu" role="menu">
+			 		<li><a href="birthdays.html">Blue Star</a></li>
+			 		<li><a href="amusements.html">Code of Ethics</a></li>
+			 		<li><a href="amusements.html">Committees</a></li>
+			 		<li><a href="amusements.html">Crisis Management</a></li>
+			 		<li><a href="amusements.html">Government Affairs</a></li>
+			 		<li><a href="amusements.html">Help Line</a></li>
+			 		<li><a href="amusements.html">Insurance</a></li>
+			 		<li><a href="amusements.html">NASA Reporting</a></li>
+			 		<li><a href="amusements.html">Pilots Bill of Rights</a></li>
+			 		<li><a href="amusements.html">Safety Audits</a></li>
+			 		<li><a href="amusements.html">Security</a></li>
+          		</ul>
+		  	</li>
+		  	<li class="dropdown">
+			 	<a href="programs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">partnerships <span class="caret"></span></a>
+			 	<ul class="dropdown-menu" role="menu">
+			 		<li><a href="birthdays.html">Aircraft Appraisals</a></li>
+			 		<li><a href="amusements.html">Aircraft financing</a></li>
+			 		<li><a href="amusements.html">Aircraft Management</a></li>
+			 		<li><a href="amusements.html">Aircraft Reference</a></li>
+			 		<li><a href="amusements.html">Cabin Attendants</a></li>
+			 		<li><a href="amusements.html">Charter Services</a></li>
+			 		<li><a href="amusements.html">Facilities Constructions</a></li>
+			 		<li><a href="amusements.html">Pilot Training</a></li>
+          		</ul>
+		  	</li>
 			<li><a href="#join">how to join</a></li>
-			<li><a href="bylaws.html">bylaws</a></li>
 			<li><a href="#letstalk">let's talk</a></li>
 			<li class="dropdown " ng-show="!loggedIn">
             	<a class="dropdown-toggle " id="login-menu" href="#" data-toggle="dropdown">sign in<strong class="caret"></strong></a>

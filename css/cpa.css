@@ -112,6 +112,8 @@ hr {
 	margin: 0px;
 	font-family: 'Josefin Sans', sans-serif;
 	padding: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
 	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,.3);
 	-moz-box-shadow: 0px 1px 4px rgba(0,0,0,.3);
 	box-shadow: 0px 1px 4px rgba(0,0,0,.3);
@@ -140,6 +142,11 @@ hr {
 	color:  #fff;
 	background-color: inherit;
 }
+.dropdown-menu>li>a:hover {
+   color: #262626;
+   text-decoration: none;
+   background-color: #f5f5f5;
+}
 .offcanvas {
 	background-color:  #787878;
 }
@@ -159,9 +166,6 @@ hr {
 .navmenu-default .navmenu-nav > li > a {
 	color: #fff;
 }
-.navmenu-default .navmenu-nav > li > a:hover {
-	color: #2D2822;
-}
 .navmenu-logo {
 	background-color: #001a31;
 	padding: 15px;
@@ -172,6 +176,21 @@ hr {
 .navbar-default .navbar-nav>.dropdown>a:hover .caret, .navbar-default .navbar-nav>.dropdown>a:focus .caret {
     border-top-color: #787878;
     border-bottom-color: #787878;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+  color: #fff;
+  background-color: #074077;
+  border-radius: 2px;
+  margin-bottom: 0px;
+}
+.dropdown-menu {
+  min-width: 220px;
+  margin-top: 20px;
+  font-size: 1em;
+}
+.navbar-default .navbar-nav>.dropdown>a .caret, .navbar-default .navbar-nav>.dropdown>a .caret:hover  {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
 }
 .img-circle {
 	border-color: #cbcbcb;
@@ -197,14 +216,15 @@ hr {
 .box h2 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
-	font-size: 2.2em;
+	font-size: 1.5em;
 	margin-bottom: 0;
 }
 .box h4 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 500;
-	margin-top: 0;
-	font-size: .9em;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 1.1em;
 }
 .box h5 {
 	font-family: 'Josefin Sans', sans-serif;
