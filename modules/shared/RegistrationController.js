@@ -1,8 +1,8 @@
 /**
  * Created by mithundas on 1/3/16.
  */
-appModule.controller('registrationController',["$scope","$rootScope","$log","toaster","$location", "$anchorScroll",
-    function($scope,$rootScope,$log,toaster,$location, $anchorScroll){
+appModule.controller('registrationController',["$scope","$rootScope","$log","toaster","$location", "$anchorScroll","AuthService",
+    function($scope,$rootScope,$log,toaster,$location, $anchorScroll,AuthService){
     $log.debug('registrationController loaded');
 
     $location.hash('body');
@@ -15,12 +15,27 @@ appModule.controller('registrationController',["$scope","$rootScope","$log","toa
         instrumentHour:0,
         otherHour:0
     }
-    $scope.createUser = function(){
+    $scope.signup = function(){
 
        // $('#login-menu').dropdown('toggle');
-        toaster.pop('success','','Your account created');
-        $rootScope.loggedIn = true;
-        $rootScope.bootstrappedUser = {firstName:"John", lastName:"Smith"};
+        //toaster.pop('success','','Your account created');
+
+        $scope.newUser.username = $scope.newUser.email;
+        AuthService.signup($scope.newUser)
+            .then(function(data){
+                $log.debug(data);
+                AuthService.toast(data);
+                if (data.status == "success") {
+                    $location.path('/');
+                    $rootScope.loggedIn = true;
+                    //$rootScope.bootstrappedUser = {firstName:"John", lastName:"Smith"};
+                }
+            },function(err){
+
+            });
+
+
+
     }
 
     $scope.totalHour = function(){

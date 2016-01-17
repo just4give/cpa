@@ -1,5 +1,12 @@
-appModule.config(["$stateProvider","$urlRouterProvider",function($stateProvider, $urlRouterProvider) {
-    
+appModule.config(["$stateProvider","$urlRouterProvider",
+    function($stateProvider, $urlRouterProvider) {
+
+        var routeRoleChecks = {
+            admin: {auth: function(AuthService) {
+                return AuthService.isAuthorized();
+            }}
+        }
+
 	$urlRouterProvider.otherwise('/');
     
     $stateProvider
@@ -12,9 +19,15 @@ appModule.config(["$stateProvider","$urlRouterProvider",function($stateProvider,
         url: '/join',
         templateUrl: 'modules/membership/tmpl/registration.html',
         controller: "registrationController"
+    }).state('profile', {
+        url: '/profile',
+        templateUrl: 'modules/membership/tmpl/profile.html',
+        resolve: routeRoleChecks.admin
     });
 
 
 
         
 }]);
+
+

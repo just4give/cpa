@@ -62,17 +62,17 @@
 			<li><a href="#bylays.html">bylaws</a></li>
 			<li><a href="#join">how to join</a></li>
 			<li><a href="#letstalk">let's talk</a></li>
-			<li class="dropdown">
+			<li class="dropdown" ng-show="!loggedIn">
             	<a class="dropdown-toggle" href="#" data-toggle="dropdown">sign in<strong class="caret"></strong></a>
 					<div class="dropdown-menu" style="padding: 15px; width:300px">
 						<form name="flogin">
 							<div class="form-group" ng-class="{ 'has-error': flogin.email.$invalid }">
 								<label class="sr-only" for="email">Email address</label>
-								<input type="email" name="email" ng-model="login.email" class="form-control" id="email" required placeholder="Enter email">
+								<input type="email" name="email" ng-model="loginuser.email" class="form-control" id="email" required placeholder="Enter email">
 							</div>
 							<div class="form-group" ng-class="{ 'has-error': flogin.password.$invalid }">
 								<label class="sr-only" for="password">Password</label>
-								<input type="password" name="password" ng-model="login.password" class="form-control" id="password" required placeholder="Password">
+								<input type="password" name="password" ng-model="loginuser.password" class="form-control" id="password" required placeholder="Password">
 							</div>
 							<div class="checkbox">
 								<label>
@@ -82,7 +82,16 @@
 							<button class="btn btn-login btn-block" ng-click="login()" ng-disabled="flogin.$invalid">Sign In</button>
 						</form>
             		</div>
-          </li>	
+          </li>
+        <li class="dropdown " ng-show="loggedIn">
+            <a class="dropdown-toggle " data-toggle="dropdown">{{bootstrappedUser.firstName}}<strong class="caret"></strong></a>
+            <ul class="dropdown-menu" style="padding: 15px; width:300px">
+
+                    <li><a class="btn btn-link" href="#/profile">My Profile</a></li>
+                    <li><button  class="btn btn-link" ng-click="logout()">Logout</button></li>
+
+            </ul>
+        </li>
 
       </ul>
     </div>
@@ -140,11 +149,11 @@
 						<form name="flogin">
 							<div class="form-group" ng-class="{ 'has-error': flogin.email.$invalid }">
 								<label class="sr-only" for="email2">Email address</label>
-								<input type="email" name="email" ng-model="login.email" class="form-control" id="email2" required placeholder="Enter email">
+								<input type="email" name="email" ng-model="loginuser.email" class="form-control" id="email2" required placeholder="Enter email">
 							</div>
 							<div class="form-group" ng-class="{ 'has-error': flogin.password.$invalid }">
 								<label class="sr-only" for="password2">Password</label>
-								<input type="password" name="password" ng-model="login.password" class="form-control" id="password2" required placeholder="Password">
+								<input type="password" name="password" ng-model="loginuser.password" class="form-control" id="password2" required placeholder="Password">
 							</div>
 							<div class="checkbox">
 								<label>
@@ -156,10 +165,10 @@
             		</div>
           </li>
 		<li class="dropdown " ng-show="loggedIn">
-			<a class="dropdown-toggle " href="#" data-toggle="dropdown">{{bootstrappedUser.firstName}}<strong class="caret"></strong></a>
+			<a class="dropdown-toggle "  data-toggle="dropdown">{{bootstrappedUser.firstName}}<strong class="caret"></strong></a>
 			<ul class="dropdown-menu" style="padding: 15px; width:300px">
 
-					<li><button class="btn btn-link">My Profile</button></li>
+					<li><a class="btn btn-link" href="#/profile">My Profile</a></li>
 					<li><button  class="btn btn-link" ng-click="logout()">Logout</button></li>
 
 			</ul>
@@ -227,7 +236,10 @@
 	<script src="vendor/angularjs-toaster/toaster.min.js"></script>
 
 	<script src="modules/app/AppModule.js"></script>
+
+	<script src="modules/shared/AuthService.js"></script>
 	<script src="modules/app/AppConfig.js"></script>
+
 	<script src="modules/app/HomeController.js"></script>
 	<script src="modules/shared/LoginController.js"></script>
 	<script src="modules/shared/RegistrationController.js"></script>
