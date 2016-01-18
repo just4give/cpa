@@ -1,0 +1,120 @@
+[17-Jan-2016 20:04:48 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:04:48 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdodb' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php:19
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php(19): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/mithunda...', 19, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(11): dbConnect->__construct()
+#2 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(3): DbHandler->__construct()
+#3 [internal function]: {closure}()
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /Users/mithundas/Project in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[17-Jan-2016 20:04:48 America/New_York] PHP Fatal error:  Cannot access empty property in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[17-Jan-2016 20:06:10 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:06:10 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdodb' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php:19
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php(19): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/mithunda...', 19, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(11): dbConnect->__construct()
+#2 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(3): DbHandler->__construct()
+#3 [internal function]: {closure}()
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /Users/mithundas/Project in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[17-Jan-2016 20:06:10 America/New_York] PHP Fatal error:  Cannot access empty property in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[17-Jan-2016 20:06:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:06:18 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdodb' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php:19
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php(19): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/mithunda...', 19, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(11): dbConnect->__construct()
+#2 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(3): DbHandler->__construct()
+#3 [internal function]: {closure}()
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /Users/mithundas/Project in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[17-Jan-2016 20:06:18 America/New_York] PHP Fatal error:  Cannot access empty property in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[17-Jan-2016 20:09:01 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:09:01 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdodb' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php:43
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php(43): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/mithunda...', 43, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(13): dbConnect->connectpdo()
+#2 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(3): DbHandler->__construct()
+#3 [internal function]: {closure}()
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#8 /Users/mithundas/Project_ in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 43
+[17-Jan-2016 20:09:01 America/New_York] PHP Fatal error:  Cannot access empty property in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 43
+[17-Jan-2016 20:10:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:10:25 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdo' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php:13
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(13): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/mithunda...', 13, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(3): DbHandler->__construct()
+#2 [internal function]: {closure}()
+#3 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverrid in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 13
+[17-Jan-2016 20:10:25 America/New_York] PHP Fatal error:  Cannot access empty property in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 13
+[17-Jan-2016 20:12:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:13:10 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:13:38 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:13:38 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: pdo' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php:21
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(21): Slim\Slim::handleErrors(8, 'Undefined varia...', '/Users/mithunda...', 21, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(17): DbHandler->getOneRecord('select id,first...')
+#2 [internal function]: {closure}()
+#3 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Mi in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 21
+[17-Jan-2016 20:13:38 America/New_York] PHP Fatal error:  Cannot access empty property in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 21
+[17-Jan-2016 20:14:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:15:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:17:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:17:44 America/New_York] login  Undefined index: password
+[17-Jan-2016 20:19:32 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:19:32 America/New_York] user found
+[17-Jan-2016 20:19:32 America/New_York] login  Undefined index: password
+[17-Jan-2016 20:20:38 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:20:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:20:57 America/New_York] login  error_log() expects parameter 1 to be string, array given
+[17-Jan-2016 20:24:19 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:24:19 America/New_York] login  Undefined index: id
+[17-Jan-2016 20:27:33 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:27:33 America/New_York] 1
+[17-Jan-2016 20:34:16 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:34:28 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:34:37 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:34:42 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:34:53 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:34:53 America/New_York] 1
+[17-Jan-2016 20:35:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:35:46 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:37:13 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:38:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:38:09 America/New_York] signUp  Undefined index: id
+[17-Jan-2016 20:41:23 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:41:24 America/New_York] user created 5
+[17-Jan-2016 20:41:24 America/New_York] signUp  Undefined index: id
+[17-Jan-2016 20:42:31 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:42:31 America/New_York] user created 6
+[17-Jan-2016 20:42:32 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:42:46 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:45:34 America/New_York] PHP Fatal error:  Call to undefined method dbConnect::connectpdo() in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 13
+[17-Jan-2016 20:45:51 America/New_York] PHP Fatal error:  Call to undefined method dbConnect::connectpdo() in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 13
+[17-Jan-2016 20:46:12 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:46:19 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:46:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:46:36 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:46:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:47:15 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:47:15 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[17-Jan-2016 20:47:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot

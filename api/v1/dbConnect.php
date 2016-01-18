@@ -3,28 +3,36 @@
 class dbConnect {
 
     private $conn;
+    private $pdodb;
 
-    function __construct() {        
+    function __construct() { 
+        
     }
 
-    /**
-     * Establishing database connection
-     * @return database connection handler
-     */
-    function connect() {
-        include_once '../config.php';
+ 
 
-        // Connecting to mysql database
-        $this->conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-
-        // Check for database connection error
-        if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    function connect(){
+        try{
+        include_once '../config.php'; 
+        $dbhost   = DB_HOST;
+        $dbuser   = DB_USERNAME;
+        $dbpass   = DB_PASSWORD;
+        $dbname   = DB_NAME;
+        $dbmethod = 'mysql:';
+        
+        $dsn = $dbmethod. 'host='. $dbhost . ';dbname='  .$dbname;
+        error_log($dsn . $dbuser . $dbpass  );
+        $pdodb =  new PDO($dsn, $dbuser, $dbpass);
+        $pdodb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdodb->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);  
+        return $pdodb; 
+        }catch (Exception $e) {
+            error_log( 'dbconect construct '. $e->getMessage());
         }
-
-        // returing connection resource
-        return $this->conn;
+   
+        
     }
+
 
 }
 

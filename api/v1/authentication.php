@@ -2,14 +2,12 @@
 $app->get('/session', function() {
     $db = new DbHandler();
     $session = $db->getSession();
-    $response["id"] = $session['uid'];
-    $response["email"] = $session['email'];
-    $response["firstName"] = $session['firstName'];
-    $response["lastName"] = $session['lastName'];
+    
     echoResponse(200, $session);
 });
 
 $app->post('/login', function() use ($app) {
+    try{
     require_once 'passwordHash.php';
     $r = json_decode($app->request->getBody());
     verifyRequiredParams(array('email', 'password'),$r);
@@ -19,6 +17,8 @@ $app->post('/login', function() use ($app) {
     $email = $r->email;
     $user = $db->getOneRecord("select id,firstName,lastName,password,email from users where email='$email'");
     if ($user != NULL) {
+        
+
         if(passwordHash::check_password($user['password'],$password)){
         $response['status'] = "success";
         $response['message'] = 'Logged in successfully.';
@@ -43,8 +43,12 @@ $app->post('/login', function() use ($app) {
             $response['message'] = 'No such user is registered';
         }
     echoResponse(200, $response);
+     }catch (Exception $e) {
+                error_log( 'login  '. $e->getMessage());
+     }
 });
 $app->post('/signUp', function() use ($app) {
+    try{
     $response = array();
     $r = json_decode($app->request->getBody());
     verifyRequiredParams(array('email', 'username','firstName','lastName', 'password'),$r);
@@ -63,6 +67,7 @@ $app->post('/signUp', function() use ($app) {
         $tabble_name = "users";
         $column_names = array('email', 'username', 'firstName', 'lastName', 'password');
         $result = $db->insertIntoTable($r, $column_names, $tabble_name);
+        
         if ($result != NULL) {
             $response["status"] = "success";
             $response["message"] = "User account created successfully";
@@ -73,7 +78,7 @@ $app->post('/signUp', function() use ($app) {
             if (!isset($_SESSION)) {
                 session_start();
             }
-            $_SESSION['id'] = $response["id"];
+            $_SESSION['id'] = $result;
             $_SESSION['email'] = $email;
             $_SESSION['firstName'] = $firstName;
             $_SESSION['lastName'] = $lastName;
@@ -88,6 +93,9 @@ $app->post('/signUp', function() use ($app) {
         $response["message"] = "An user with the provided phone or email exists!";
         echoResponse(201, $response);
     }
+    }catch (Exception $e) {
+            error_log( 'signUp  '. $e->getMessage());
+     }
 });
 $app->post('/logout', function() {
     $db = new DbHandler();

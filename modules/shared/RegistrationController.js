@@ -28,7 +28,7 @@ appModule.controller('registrationController',["$scope","$rootScope","$log","toa
                 if (data.status == "success") {
                     $location.path('/');
                     $rootScope.loggedIn = true;
-                    //$rootScope.bootstrappedUser = {firstName:"John", lastName:"Smith"};
+                    $rootScope.bootstrappedUser = {firstName:data.firstName, lastName:data.lastName,email:data.email};
                 }
             },function(err){
 

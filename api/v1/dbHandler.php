@@ -2,20 +2,24 @@
 
 class DbHandler {
 
-    private $conn;
+    
+    private $pdo;
 
     function __construct() {
         require_once 'dbConnect.php';
         // opening db connection
         $db = new dbConnect();
-        $this->conn = $db->connect();
+       
+        $this->pdo = $db->connect();
     }
     /**
      * Fetching single record
      */
     public function getOneRecord($query) {
-        $r = $this->conn->query($query.' LIMIT 1') or die($this->conn->error.__LINE__);
-        return $result = $r->fetch_assoc();    
+        //$r = $this->conn->query($query.' LIMIT 1') or die($this->conn->error.__LINE__);
+        //return $result = $r->fetch_assoc();   
+         $stmt = $this->pdo->query($query .' LIMIT 1');
+        return $stmt->fetch(PDO::FETCH_ASSOC);
     }
     /**
      * Creating new record
@@ -36,11 +40,12 @@ class DbHandler {
             $values = $values."'".$$desired_key."',";
         }
         $query = "INSERT INTO ".$table_name."(".trim($columns,',').") VALUES(".trim($values,',').")";
-        $r = $this->conn->query($query) or die($this->conn->error.__LINE__);
+        //$r = $this->conn->query($query) or die($this->conn->error.__LINE__);
+         $r = $this->pdo->exec($query);
 
         if ($r) {
-            $new_row_id = $this->conn->insert_id;
-            return $new_row_id;
+            
+            return $this->pdo->lastInsertId();;
             } else {
             return NULL;
         }
