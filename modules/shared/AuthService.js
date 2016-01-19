@@ -88,13 +88,33 @@ appModule.factory('AuthService', ["$rootScope","$http","$q", "$log","toaster",fu
 
         isAuthorized : function(){
 
+            $log.debug('authorized '+ $rootScope.loggedIn);
+            if($rootScope.loggedIn != undefined){
+                if($rootScope.loggedIn){
+                    return true;
+                }else{
 
-            if($rootScope.loggedIn){
-                return true;
+                    return $q.reject('not authorized');
+                }
             }else{
+                var deferred = $q.defer();
 
-                return $q.reject('not authorized');
+                $http.get(serviceBase + "session")
+                    .success(function (data){
+                        if(data.id){
+                            deferred.resolve(true);
+                        }else{
+                            deferred.reject('not authorized');
+                        }
+
+                    })
+                    .error(function(err){
+                        deferred.reject('not authorized');
+
+                    });
+                return deferred.promise;
             }
+
         }
 
     }

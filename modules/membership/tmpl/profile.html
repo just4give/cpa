@@ -1,15 +1,19 @@
-<section>
+<section >
+    <form name="profile" action="process.php" method="POST" class="text-center row" style="padding-bottom: 25px">
+        <p>User profile </p>
+        <table class="table">
+            <tr>
+                <td>Email:</td><td>{{bootstrappedUser.email}}</td>
+            </tr>
+            <tr>
+                <td>First Name:</td><td>{{bootstrappedUser.firstName}}</td>
+            </tr>
+            <tr>
+                <td>Last Name:</td><td>{{bootstrappedUser.lastName}}</td>
+            </tr>
+        </table>
+        <input type="hidden" name="itemprice" value="500" />
+        <button type="submit" class="btn btn-success"><i class="fa fa-paypal"></i> Pay with Paypal ($500) </button>
+    </form>
 
-    <p>User profile </p>
-    <table class="table">
-        <tr>
-            <td>Email:</td><td>{{bootstrappedUser.email}}</td>
-        </tr>
-        <tr>
-            <td>First Name:</td><td>{{bootstrappedUser.firstName}}</td>
-        </tr>
-        <tr>
-            <td>Last Name:</td><td>{{bootstrappedUser.lastName}}</td>
-        </tr>
-    </table>
 </section>
