@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corporate Pilots Association</title>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+	  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body class="container">
 <?php
 include_once("config.php");
 include_once("paypal.class.php");
@@ -147,13 +156,16 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 				
 				if('Completed' == $httpParsedResponseAr["PAYMENTINFO_0_PAYMENTSTATUS"])
 				{
-					echo '<div style="color:green">Payment Received! Your product will be sent to you very soon!</div>';
+					echo '<div style="color:green">Payment Received! Thank you!</div>';
 				}
 				elseif('Pending' == $httpParsedResponseAr["PAYMENTINFO_0_PAYMENTSTATUS"])
 				{
 					echo '<div style="color:red">Transaction Complete, but payment is still pending! '.
 					'You need to manually authorize this payment in your <a target="_new" href="http://www.paypal.com">Paypal Account</a></div>';
 				}
+				echo '<div class="row text-center">
+						<a class="btn btn-success" href="/#/profile" >Back to site</a>
+					</div> ';
 
 				// we can retrive transection details using either GetTransactionDetails or GetExpressCheckoutDetails
 				// GetTransactionDetails requires a Transaction ID, and GetExpressCheckoutDetails requires Token returned by SetExpressCheckOut
@@ -164,7 +176,7 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 				if("SUCCESS" == strtoupper($httpParsedResponseAr["ACK"]) || "SUCCESSWITHWARNING" == strtoupper($httpParsedResponseAr["ACK"])) 
 				{
 					
-					echo '<br /><b>Stuff to store in database :</b><br /><pre>';
+					//echo '<br /><b>Stuff to store in database :</b><br /><pre>';
 					/*
 					#### SAVE BUYER INFORMATION IN DATABASE ###
 					//see (http://www.sanwebe.com/2013/03/basic-php-mysqli-usage) for mysqli usage
@@ -192,22 +204,24 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 					
 					*/
 					
-					echo '<pre>';
-					print_r($httpParsedResponseAr);
-					echo '</pre>';
+					//echo '<pre>';
+					//print_r($httpParsedResponseAr);
+					//echo '</pre>';
 				} else  {
 					echo '<div style="color:red"><b>GetTransactionDetails failed:</b>'.urldecode($httpParsedResponseAr["L_LONGMESSAGE0"]).'</div>';
-					echo '<pre>';
-					print_r($httpParsedResponseAr);
-					echo '</pre>';
+					//echo '<pre>';
+					//print_r($httpParsedResponseAr);
+					//echo '</pre>';
 
 				}
 	
 	}else{
 			echo '<div style="color:red"><b>Error : </b>'.urldecode($httpParsedResponseAr["L_LONGMESSAGE0"]).'</div>';
-			echo '<pre>';
-			print_r($httpParsedResponseAr);
-			echo '</pre>';
+			//echo '<pre>';
+			//print_r($httpParsedResponseAr);
+			//echo '</pre>';
 	}
 }
 ?>
+</body>
+</html>

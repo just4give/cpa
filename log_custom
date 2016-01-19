@@ -7863,3 +7863,23 @@
 127.0.0.1 - - [18/Jan/2016:20:35:58 -0500] "GET /api/v1/session HTTP/1.1" 200 73
 127.0.0.1 - - [18/Jan/2016:20:35:58 -0500] "GET /modules/membership/tmpl/profile.html HTTP/1.1" 304 -
 127.0.0.1 - - [18/Jan/2016:20:35:59 -0500] "POST /process.php HTTP/1.1" 302 -
+127.0.0.1 - - [18/Jan/2016:20:39:27 -0500] "GET /api/v1/session HTTP/1.1" 200 73
+127.0.0.1 - - [18/Jan/2016:20:39:27 -0500] "GET /modules/membership/tmpl/profile.html HTTP/1.1" 304 -
+127.0.0.1 - - [18/Jan/2016:20:39:47 -0500] "-" 408 -
+127.0.0.1 - - [18/Jan/2016:20:39:47 -0500] "-" 408 -
+127.0.0.1 - - [18/Jan/2016:20:39:47 -0500] "-" 408 -
+127.0.0.1 - - [18/Jan/2016:20:39:47 -0500] "-" 408 -
+127.0.0.1 - - [18/Jan/2016:20:39:47 -0500] "-" 408 -
+127.0.0.1 - - [18/Jan/2016:20:44:11 -0500] "POST /process.php HTTP/1.1" 302 -
+127.0.0.1 - - [18/Jan/2016:20:51:13 -0500] "GET /api/v1/session HTTP/1.1" 200 73
+127.0.0.1 - - [18/Jan/2016:20:51:14 -0500] "GET /modules/membership/tmpl/profile.html HTTP/1.1" 304 -
+127.0.0.1 - - [18/Jan/2016:20:51:16 -0500] "POST /process.php HTTP/1.1" 302 -
+127.0.0.1 - - [18/Jan/2016:20:52:56 -0500] "GET /process.php?token=EC-5RN88331LC954214M&PayerID=7VZQ8FFR3Z7X4 HTTP/1.1" 200 309
+127.0.0.1 - - [18/Jan/2016:21:01:05 -0500] "GET /api/v1/session HTTP/1.1" 200 73
+127.0.0.1 - - [18/Jan/2016:21:01:05 -0500] "GET /modules/membership/tmpl/profile.html HTTP/1.1" 304 -
+127.0.0.1 - - [18/Jan/2016:21:01:09 -0500] "POST /process.php HTTP/1.1" 302 309
+127.0.0.1 - - [18/Jan/2016:21:02:07 -0500] "GET /process.php?token=EC-8SV480966W252174J&PayerID=7VZQ8FFR3Z7X4 HTTP/1.1" 200 586
+127.0.0.1 - - [18/Jan/2016:21:06:20 -0500] "GET / HTTP/1.1" 200 11351
+127.0.0.1 - - [18/Jan/2016:21:06:20 -0500] "GET /modules/shared/AuthService.js HTTP/1.1" 304 -
+127.0.0.1 - - [18/Jan/2016:21:06:21 -0500] "GET /api/v1/session HTTP/1.1" 200 73
+127.0.0.1 - - [18/Jan/2016:21:06:21 -0500] "GET /api/v1/session HTTP/1.1" 200 73
