@@ -67,6 +67,7 @@ public function getSession(){
         $sess["lastName"] = $_SESSION['lastName'];
         $sess["email"] = $_SESSION['email'];
         $sess["verified"] = $_SESSION['verified'];
+        $sess["subscription"] =$_SESSION['subscription'];
     }
     else
     {
@@ -85,6 +86,8 @@ public function destroySession(){
         unset($_SESSION['firstName']);
         unset($_SESSION['lastName']);
         unset($_SESSION['email']);
+        unset($_SESSION['subscription']);
+        
         $info='info';
         if(isSet($_COOKIE[$info]))
         {

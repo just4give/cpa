@@ -20,7 +20,10 @@ appModule.controller('loginController',["$scope","$rootScope","$state","$log","t
                 if (data.status == "success") {
 
                     $rootScope.loggedIn = true;
-                    $rootScope.bootstrappedUser = {firstName:data.firstName, lastName:data.lastName,email:data.email,verified: data.verified};
+                    $rootScope.bootstrappedUser = {firstName:data.firstName, lastName:data.lastName,email:data.email,verified: data.verified, subscription: data.subscription};
+                    if(data.subscription===1){
+                        $rootScope.isSubscribed = true;
+                    }
                 }
             },function(err){
 
@@ -33,6 +36,7 @@ appModule.controller('loginController',["$scope","$rootScope","$state","$log","t
 
         $rootScope.loggedIn = false;
         $rootScope.bootstrappedUser = undefined;
+        $rootScope.isSubscribed = false;
 
         AuthService.logout($scope.loginuser)
             .then(function(data){

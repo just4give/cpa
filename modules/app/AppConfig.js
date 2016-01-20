@@ -4,6 +4,9 @@ appModule.config(["$stateProvider","$urlRouterProvider",
         var routeRoleChecks = {
             admin: {auth: function(AuthService) {
                 return AuthService.isAuthorized();
+            }},
+            subscribed: {subscribed: function(AuthService) {
+                return AuthService.isSubscribed();
             }}
         }
 
@@ -24,6 +27,10 @@ appModule.config(["$stateProvider","$urlRouterProvider",
         templateUrl: 'modules/membership/tmpl/profile.html',
         controller:'profileController',
         resolve: routeRoleChecks.admin
+    }).state('bluestar', {
+        url: '/member.bluestar',
+        templateUrl: 'modules/membership/tmpl/bluestar.html',
+        resolve: routeRoleChecks.subscribed
     });
 
 

@@ -32,6 +32,11 @@ $app->post('/login', function() use ($app) {
         $response['id'] = $user['id'];
         $response['email'] = $user['email'];
         $response['verified'] = $user['verified'];
+
+        //now check subscription status 
+        $subscription = $db->getOneRecord("select datediff(now(),paymentDate) as duration , expiresIn from subscriptions where userId=".$user['id']);
+
+
         
         if (!isset($_SESSION)) {
             session_start();
@@ -41,6 +46,20 @@ $app->post('/login', function() use ($app) {
         $_SESSION['firstName'] = $user['firstName'];
         $_SESSION['lastName'] = $user['lastName'];
         $_SESSION['verified'] = $user['verified'];
+
+        if($subscription !=NULL){
+            if($subscription['duration'] <= $subscription['expiresIn']){
+                $_SESSION['subscription'] = 1;
+                $response['subscription'] = 1;
+            }else{
+                $_SESSION['subscription'] = 0;
+                 $response['subscription'] = 0;
+            }
+        }else{
+            $_SESSION['subscription'] = 0;
+             $response['subscription'] = 0;
+        }
+
         } else {
             $response['status'] = "error";
             $response['message'] = 'Login failed. Incorrect credentials';
@@ -87,7 +106,7 @@ $app->post('/signUp', function() use ($app) {
             $response['lastName'] = $lastName;
             $response['email'] = $email;
             $response['verified'] = 0;
-
+            $response['subscription'] = 0;
             if (!isset($_SESSION)) {
                 session_start();
             }
@@ -96,7 +115,7 @@ $app->post('/signUp', function() use ($app) {
             $_SESSION['firstName'] = $firstName;
             $_SESSION['lastName'] = $lastName;
             $_SESSION['verified'] = 0;
-
+            $_SESSION['subscription'] = 0;
             //send verification email 
             
             sendEmail($result,'email');

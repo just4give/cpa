@@ -113,9 +113,9 @@
 			<li class="active"><a href="#home">home</a></li>
 			<li><a href="#home">about</a></li>
 			<li class="dropdown">
-			 	<a href="programs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">member services <span class="caret"></span></a>
+			 	<a href="programs.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" ng-show="isSubscribed">member services <span class="caret"></span></a>
 			 	<ul class="dropdown-menu" role="menu">
-			 		<li><a href="birthdays.html">Blue Star</a></li>
+			 		<li><a href="#/member.bluestar">Blue Star</a></li>
 			 		<li><a href="amusements.html">Code of Ethics</a></li>
 			 		<li><a href="amusements.html">Committees</a></li>
 			 		<li><a href="amusements.html">Crisis Management</a></li>

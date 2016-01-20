@@ -133,6 +133,36 @@ appModule.factory('AuthService', ["$rootScope","$http","$q", "$log","toaster",fu
                 return deferred.promise;
             }
 
+        },
+        isSubscribed : function(){
+
+                       if($rootScope.isSubscribed != undefined){
+                if($rootScope.isSubscribed){
+                    return true;
+                }else{
+
+                    return $q.reject('not authorized');
+                }
+            }else{
+                var deferred = $q.defer();
+
+                $http.get(serviceBase + "session")
+                    .success(function (data){
+                        if(data.subscription ===1){
+                            deferred.resolve(true);
+                        }else{
+                            deferred.reject('not authorized');
+                        }
+
+                    })
+                    .error(function(err){
+                        deferred.reject('not authorized');
+
+                    });
+                return deferred.promise;
+            }
+            
+
         }
 
     }
