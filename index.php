@@ -243,7 +243,7 @@
 	<script src="modules/app/HomeController.js"></script>
 	<script src="modules/shared/LoginController.js"></script>
 	<script src="modules/shared/RegistrationController.js"></script>
-
+    <script src="modules/membership/ProfileController.js"></script>
 	<script src="js/wow.min.js"></script>
 	<script src="js/jasny-bootstrap.min.js"></script><!--/used for offscreen mobile menu -->
 	<script src="js/cpa.js"></script>

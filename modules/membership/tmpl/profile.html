@@ -1,6 +1,12 @@
-<section >
-    <form name="profile" action="process.php" method="POST" class="text-center row" style="padding-bottom: 25px">
+<section class="container text-center">
+
         <p>User profile </p>
+        <div class="alert alert-danger" role="alert" ng-show="bootstrappedUser.verified==0">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            Your account is not verified. Please check your email and verify your account.
+            <span><button class="btn btn-success" ng-click="resend()">Resend</button></span>
+        </div>
         <table class="table">
             <tr>
                 <td>Email:</td><td>{{bootstrappedUser.email}}</td>
@@ -12,8 +18,9 @@
                 <td>Last Name:</td><td>{{bootstrappedUser.lastName}}</td>
             </tr>
         </table>
+    <form name="profile" action="payment/process.php" method="POST" class="text-center row" style="padding-bottom: 25px">
         <input type="hidden" name="itemprice" value="500" />
-        <button type="submit" class="btn btn-success"><i class="fa fa-paypal"></i> Pay with Paypal ($500) </button>
+        <button ng-show="bootstrappedUser.verified==1" type="submit" class="btn btn-success"><i class="fa fa-paypal"></i> Pay with Paypal ($500) </button>
     </form>
 
 </section>

@@ -22,6 +22,7 @@ appModule.config(["$stateProvider","$urlRouterProvider",
     }).state('profile', {
         url: '/profile',
         templateUrl: 'modules/membership/tmpl/profile.html',
+        controller:'profileController',
         resolve: routeRoleChecks.admin
     });
 

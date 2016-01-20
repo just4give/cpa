@@ -20,7 +20,7 @@ appModule.controller('loginController',["$scope","$rootScope","$state","$log","t
                 if (data.status == "success") {
 
                     $rootScope.loggedIn = true;
-                    $rootScope.bootstrappedUser = {firstName:data.firstName, lastName:data.lastName,email:data.email};
+                    $rootScope.bootstrappedUser = {firstName:data.firstName, lastName:data.lastName,email:data.email,verified: data.verified};
                 }
             },function(err){
 

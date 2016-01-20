@@ -82,6 +82,24 @@ appModule.factory('AuthService', ["$rootScope","$http","$q", "$log","toaster",fu
 
             return deferred.promise;
         },
+        resend : function(){
+
+            var deferred = $q.defer();
+
+            $http.post(serviceBase + "resend", {})
+                .success(function (data){
+
+                    deferred.resolve(data);
+                })
+                .error(function(err){
+                    deferred.reject(err);
+                });
+
+
+
+
+            return deferred.promise;
+        },
         toast : function (data) {
         toaster.pop(data.status, "", data.message, 10000, 'trustedHtml');
         },

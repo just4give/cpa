@@ -21,6 +21,11 @@ class DbHandler {
          $stmt = $this->pdo->query($query .' LIMIT 1');
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function updateRecord($query) {
+        $r = $this->pdo->exec($query);
+        return $r;
+    }
     /**
      * Creating new record
      */
@@ -61,6 +66,7 @@ public function getSession(){
         $sess["firstName"] = $_SESSION['firstName'];
         $sess["lastName"] = $_SESSION['lastName'];
         $sess["email"] = $_SESSION['email'];
+        $sess["verified"] = $_SESSION['verified'];
     }
     else
     {

@@ -22,7 +22,7 @@ appModule.run(["$log","$rootScope", "$state", "AuthService",function ($log,$root
         AuthService.loggedIn().then(function (data) {
             if (data.id) {
                 $rootScope.loggedIn = true;
-                $rootScope.bootstrappedUser ={firstName:data.firstName, lastName:data.lastName,email:data.email};
+                $rootScope.bootstrappedUser ={firstName:data.firstName, lastName:data.lastName,email:data.email,verified: data.verified};
             }
         });
     });

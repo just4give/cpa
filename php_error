@@ -231,3 +231,280 @@ Stack trace:
 [18-Jan-2016 21:01:05 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
 [18-Jan-2016 21:06:21 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
 [18-Jan-2016 21:06:21 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 12:49:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 12:49:44 America/New_York] dbconect construct SQLSTATE[HY000] [2002] Connection refused
+[19-Jan-2016 12:49:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 12:49:44 America/New_York] dbconect construct SQLSTATE[HY000] [2002] Connection refused
+[19-Jan-2016 12:49:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 12:49:44 America/New_York] dbconect construct SQLSTATE[HY000] [2002] Connection refused
+[19-Jan-2016 12:49:46 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 12:49:46 America/New_York] dbconect construct SQLSTATE[HY000] [2002] Connection refused
+[19-Jan-2016 13:27:00 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:27:00 America/New_York] dbconect construct SQLSTATE[HY000] [2002] Connection refused
+[19-Jan-2016 13:27:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:27:03 America/New_York] dbconect construct SQLSTATE[HY000] [2002] Connection refused
+[19-Jan-2016 13:27:03 America/New_York] PHP Fatal error:  Call to a member function query() on a non-object in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 21
+[19-Jan-2016 13:28:13 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:28:21 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:34:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:34:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:36:05 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:36:56 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:36:58 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:36:58 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:37:54 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:37:54 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:44:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 13:44:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 14:39:40 America/New_York] PHP Fatal error:  Call to undefined function com_create_guid() in /Users/mithundas/Project_Workspace/PHP/cpa/sendmail.php on line 10
+[19-Jan-2016 14:53:37 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:37 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:37 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:37 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:37 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:37 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:43 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 14:53:43 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:00:09 America/New_York] PHP Parse error:  parse error in /Users/mithundas/Project_Workspace/PHP/cpa/verifyemail.php on line 38
+[19-Jan-2016 15:00:34 America/New_York] PHP Parse error:  parse error, expecting `','' or `';'' in /Users/mithundas/Project_Workspace/PHP/cpa/verifyemail.php on line 47
+[19-Jan-2016 15:26:39 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:26:39 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:29:07 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:29:07 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:29:30 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:29:30 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:33:48 America/New_York] PHP Warning:  require(.././lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:33:48 America/New_York] PHP Fatal error:  require(): Failed opening required '.././lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:35:33 America/New_York] PHP Warning:  require(.././lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:35:33 America/New_York] PHP Fatal error:  require(): Failed opening required '.././lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:39:45 America/New_York] PHP Warning:  require(.././lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:39:45 America/New_York] PHP Fatal error:  require(): Failed opening required '.././lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:40:04 America/New_York] PHP Warning:  require(.././lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:40:04 America/New_York] PHP Fatal error:  require(): Failed opening required '.././lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:41:21 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:41:21 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:41:24 America/New_York] PHP Warning:  require(../../lib/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:41:24 America/New_York] PHP Fatal error:  require(): Failed opening required '../../lib/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:41:44 America/New_York] PHP Warning:  require(../../libs/PHPMailer/PHPMailerAutoload.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:41:44 America/New_York] PHP Fatal error:  require(): Failed opening required '../../libs/PHPMailer/PHPMailerAutoload.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php on line 3
+[19-Jan-2016 15:42:26 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:55:20 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:55:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:58:13 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:59:01 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:59:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:59:36 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 15:59:36 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:04:59 America/New_York] PHP Fatal error:  Class 'DbHandler' not found in /Users/mithundas/Project_Workspace/PHP/cpa/verifyemail.php on line 38
+[19-Jan-2016 16:05:58 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:05:58 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:05:58 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[19-Jan-2016 16:05:58 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[19-Jan-2016 16:05:58 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[19-Jan-2016 16:05:58 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[19-Jan-2016 16:05:58 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[19-Jan-2016 16:05:58 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[19-Jan-2016 16:05:58 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[19-Jan-2016 16:06:43 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:06:43 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:06:43 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[19-Jan-2016 16:06:43 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[19-Jan-2016 16:06:43 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[19-Jan-2016 16:06:43 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[19-Jan-2016 16:06:43 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[19-Jan-2016 16:06:43 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[19-Jan-2016 16:06:43 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[19-Jan-2016 16:07:00 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:07:00 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:07:00 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[19-Jan-2016 16:07:00 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[19-Jan-2016 16:07:00 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[19-Jan-2016 16:07:00 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[19-Jan-2016 16:07:00 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[19-Jan-2016 16:07:00 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[19-Jan-2016 16:07:00 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[19-Jan-2016 16:07:46 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:07:46 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:07:46 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[19-Jan-2016 16:07:46 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[19-Jan-2016 16:07:46 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[19-Jan-2016 16:07:46 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[19-Jan-2016 16:07:46 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[19-Jan-2016 16:07:46 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[19-Jan-2016 16:07:46 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[19-Jan-2016 16:07:51 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:07:51 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[19-Jan-2016 16:07:51 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[19-Jan-2016 16:07:51 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[19-Jan-2016 16:07:51 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[19-Jan-2016 16:07:51 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[19-Jan-2016 16:07:51 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[19-Jan-2016 16:07:51 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[19-Jan-2016 16:07:51 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[19-Jan-2016 16:09:23 America/New_York] PHP Fatal error:  Class 'DbHandler' not found in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/verifyemail.php on line 40
+[19-Jan-2016 16:09:43 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:37:58 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:38:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:40:31 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:41:59 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:42:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:43:08 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:43:40 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:44:00 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:52:16 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:52:20 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:52:24 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:53:30 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:53:32 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:53:58 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:54:07 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 16:54:07 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:04:36 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:04:36 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:04:40 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:04:40 America/New_York] login  Undefined index: verified
+[19-Jan-2016 17:04:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:04:57 America/New_York] login  Undefined index: verified
+[19-Jan-2016 17:05:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:05:32 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:05:32 America/New_York] login  Undefined index: verified
+[19-Jan-2016 17:06:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:06:37 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:07:24 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:07:24 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:07:28 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:08:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:08:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:08:54 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:10:28 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:10:28 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:11:34 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:11:34 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:11:53 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:11:53 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:12:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:12:26 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:13:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:13:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:13:13 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:13:13 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:13:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:13:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:16:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 17:16:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:31:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:31:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:32:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:32:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:32:41 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:32:41 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:17 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:17 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:28 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:28 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:33 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:37 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:46 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:46 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:33:56 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:34:00 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:34:35 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:34:35 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:34:47 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:34:47 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:35:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:35:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:35:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:35:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:37:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:37:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:37:30 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:37:30 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:37:47 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:37:51 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:38:37 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:38:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:39:05 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:40:07 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:40:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:40:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 19:40:13 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:52:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:52:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:52:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:52:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:52:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:52:56 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:26 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:26 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:43 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:53:50 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:56:30 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:56:55 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:56:59 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 21:56:59 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:00:43 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:01:01 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:01:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:01:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:07:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:07:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:07:37 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:07:42 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:07:44 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:08:16 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:08:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:08:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:14 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:10:29 America/New_York] signUp  Undefined variable: verifyEmailAPI
+[19-Jan-2016 22:12:16 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:12:16 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:12:16 America/New_York] signUp  Undefined variable: verifyEmailAPI
+[19-Jan-2016 22:14:23 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:14:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:14:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:15:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:15:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:15:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:15:48 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:15:48 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:15:48 America/New_York] signUp  Undefined variable: verifyEmailAPI
+[19-Jan-2016 22:17:52 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:17:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:18:01 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:21:39 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:22:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:22:19 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:22:23 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:22:36 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:22:36 America/New_York] signUp  Undefined variable: verifyEmailAPI
+[19-Jan-2016 22:24:21 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:24:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:26:48 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:27:30 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:27:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:27:50 America/New_York] signUp  Constant DB_USERNAME already defined
+[19-Jan-2016 22:30:53 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:30:53 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:30:54 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:31:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:31:33 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:31:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:32:10 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:32:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:32:53 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:32:57 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:33:15 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:33:17 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[19-Jan-2016 22:33:17 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
