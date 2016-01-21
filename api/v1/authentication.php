@@ -95,8 +95,8 @@ $app->post('/signUp', function() use ($app) {
     if(!$isUserExists){
         $r->password = passwordHash::hash($password);
         $tabble_name = "users";
-
-        $column_names = array('email', 'username', 'firstName', 'lastName', 'password');
+        $r['createdOn'] = date('Y-m-d H:i:s'); 
+        $column_names = array('email', 'username', 'firstName', 'lastName', 'password','createdOn');
         $result = $db->insertIntoTable($r, $column_names, $tabble_name);
         
         if ($result != NULL) {

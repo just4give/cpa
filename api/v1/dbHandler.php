@@ -6,7 +6,7 @@ class DbHandler {
     private $pdo;
 
     function __construct() {
-        require_once 'dbConnect.php';
+        require_once (__DIR__. '/dbConnect.php');
         // opening db connection
         $db = new dbConnect();
        

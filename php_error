@@ -508,3 +508,93 @@ Stack trace:
 [19-Jan-2016 22:33:15 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
 [19-Jan-2016 22:33:17 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
 [19-Jan-2016 22:33:17 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:40:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:40:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:40:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:40:16 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:40:21 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:43:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:43:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:43:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:43:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:47:40 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:47:40 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:52:37 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[20-Jan-2016 19:52:37 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[20-Jan-2016 19:52:37 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[20-Jan-2016 19:52:37 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[20-Jan-2016 19:52:37 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[20-Jan-2016 19:52:37 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[20-Jan-2016 19:52:37 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[20-Jan-2016 19:52:37 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[20-Jan-2016 19:52:37 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[20-Jan-2016 19:57:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:57:29 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:57:43 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:57:43 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 19:58:04 America/New_York] PHP Warning:  require_once(./dbConnect.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 9
+[20-Jan-2016 19:58:04 America/New_York] PHP Fatal error:  require_once(): Failed opening required './dbConnect.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 9
+[20-Jan-2016 20:01:21 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 20:01:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 20:01:44 America/New_York] PHP Warning:  include_once(../config.php): failed to open stream: No such file or directory in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[20-Jan-2016 20:01:44 America/New_York] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[20-Jan-2016 20:01:44 America/New_York] PHP Notice:  Use of undefined constant DB_HOST - assumed 'DB_HOST' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 17
+[20-Jan-2016 20:01:44 America/New_York] PHP Notice:  Use of undefined constant DB_USERNAME - assumed 'DB_USERNAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 18
+[20-Jan-2016 20:01:44 America/New_York] PHP Notice:  Use of undefined constant DB_PASSWORD - assumed 'DB_PASSWORD' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 19
+[20-Jan-2016 20:01:44 America/New_York] PHP Notice:  Use of undefined constant DB_NAME - assumed 'DB_NAME' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 20
+[20-Jan-2016 20:01:44 America/New_York] mysql:host=DB_HOST;dbname=DB_NAMEDB_USERNAMEDB_PASSWORD
+[20-Jan-2016 20:01:44 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 25
+[20-Jan-2016 20:01:44 America/New_York] dbconect construct SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+[20-Jan-2016 20:12:01 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(/Users/mithundas/Project_Workspace/PHP/cpa/api/v1/api/v1/dbConnect.php): failed to open stream: No such file or directory' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php:9
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(9): Slim\Slim::handleErrors(2, 'require_once(/U...', '/Users/mithunda...', 9, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(9): DbHandler::__construct()
+#2 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(8): DbHandler->__construct()
+#3 [internal function]: {closure}()
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/a in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 9
+[20-Jan-2016 20:12:01 America/New_York] PHP Fatal error:  DbHandler::__construct(): Failed opening required '/Users/mithundas/Project_Workspace/PHP/cpa/api/v1/api/v1/dbConnect.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 9
+[20-Jan-2016 20:12:17 America/New_York] PHP Warning:  Uncaught exception 'ErrorException' with message 'require_once(/Users/mithundas/Project_Workspace/PHP/cpa/api/v1/api/v1/dbConnect.php): failed to open stream: No such file or directory' in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php:9
+Stack trace:
+#0 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(9): Slim\Slim::handleErrors(2, 'require_once(/U...', '/Users/mithunda...', 9, Array)
+#1 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php(9): DbHandler::__construct()
+#2 /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/authentication.php(20): DbHandler->__construct()
+#3 [internal function]: {closure}()
+#4 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#5 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#6 /Users/mithundas/Project_Workspace/PHP/cpa/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#7 /Users/mithundas/Project_Workspace/PHP/cpa/ in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 9
+[20-Jan-2016 20:12:17 America/New_York] PHP Fatal error:  DbHandler::__construct(): Failed opening required '/Users/mithundas/Project_Workspace/PHP/cpa/api/v1/api/v1/dbConnect.php' (include_path='.:') in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbHandler.php on line 9
+[20-Jan-2016 20:15:12 America/New_York] PHP Parse error:  parse error in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[20-Jan-2016 20:15:16 America/New_York] PHP Parse error:  parse error in /Users/mithundas/Project_Workspace/PHP/cpa/api/v1/dbConnect.php on line 16
+[20-Jan-2016 20:15:51 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 20:16:01 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 20:16:33 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 20:27:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 20:27:03 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:16:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:16:23 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:18:09 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:18:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:18:27 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:20:34 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:20:34 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:20:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:20:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:20:59 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:21:19 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:25:11 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:25:11 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:25:18 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:25:22 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:25:49 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:26:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:26:06 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:28:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:28:25 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:29:56 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:30:35 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:30:40 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot
+[20-Jan-2016 23:30:45 America/New_York] mysql:host=127.0.0.1;dbname=cpadbrootroot

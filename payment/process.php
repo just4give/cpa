@@ -4,12 +4,13 @@
     <title>Corporate Pilots Association</title>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
-	  <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body class="container">
 <?php
 include_once("config.php");
 include_once("paypal.class.php");
+include_once (__DIR__ .'/../api/v1/dbHandler.php');
 
 $paypalmode = ($PayPalMode=='sandbox') ? '.sandbox' : '';
 
@@ -112,6 +113,7 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 	$ItemTotalPrice 	= $_SESSION['ItemTotalPrice']; //(Item Price x Quantity = Total) Get total amount of product; 
 	$TotalTaxAmount 	= $_SESSION['TotalTaxAmount'] ;  //Sum of tax for all items in this order. 
 	$GrandTotal 		= $_SESSION['GrandTotal'];
+	$userId				= $_SESSION['id'];
 
 	$padata = 	'&TOKEN='.urlencode($token).
 				'&PAYERID='.urlencode($payer_id).
@@ -146,8 +148,10 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 	if("SUCCESS" == strtoupper($httpParsedResponseAr["ACK"]) || "SUCCESSWITHWARNING" == strtoupper($httpParsedResponseAr["ACK"])) 
 	{
 
+			$transactionId =  urldecode($httpParsedResponseAr["PAYMENTINFO_0_TRANSACTIONID"]);
+
 			echo '<h2>Success</h2>';
-			echo 'Your Transaction ID : '.urldecode($httpParsedResponseAr["PAYMENTINFO_0_TRANSACTIONID"]);
+			echo 'Your Transaction ID : '. $transactionId;
 			
 				/*
 				//Sometimes Payment are kept pending even when transaction is complete. 
@@ -203,10 +207,26 @@ if(isset($_GET["token"]) && isset($_GET["PayerID"]))
 					}
 					
 					*/
-					
+					//PAYERID
 					//echo '<pre>';
 					//print_r($httpParsedResponseAr);
 					//echo '</pre>';
+
+					//add data into subscription table
+
+					$db = new DbHandler();
+					
+					$row["userId"] = $userId;
+		            $row["paymentDate"] = date('Y-m-d H:i:s'); 
+		            $row["amount"] = $GrandTotal;
+		            $row["expiresIn"] = 365;
+		            $row["paypalTnxId"] = $transactionId;
+		            $row["paypalMemberId"] = $payer_id;
+		            $row["paymentMode"] = 'paypal';
+
+            		$subscription = $db->insertIntoTable($row, array('userId','paymentDate', 'amount', 'expiresIn','paypalTnxId','paypalMemberId','paymentMode'), "subscriptions");
+            		$_SESSION['subscription'] = 1;
+
 				} else  {
 					echo '<div style="color:red"><b>GetTransactionDetails failed:</b>'.urldecode($httpParsedResponseAr["L_LONGMESSAGE0"]).'</div>';
 					//echo '<pre>';

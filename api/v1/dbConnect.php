@@ -13,7 +13,7 @@ class dbConnect {
 
     function connect(){
         try{
-        include_once '../config.php'; 
+        include_once (__DIR__.'/../config.php'); 
         $dbhost   = DB_HOST;
         $dbuser   = DB_USERNAME;
         $dbpass   = DB_PASSWORD;

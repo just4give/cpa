@@ -18,9 +18,15 @@
                 <td>Last Name:</td><td>{{bootstrappedUser.lastName}}</td>
             </tr>
         </table>
-    <form name="profile" action="payment/process.php" method="POST" class="text-center row" style="padding-bottom: 25px">
+    <form name="profile" action="payment/process.php" method="POST" class="text-center row" style="padding-bottom: 25px" ng-show="bootstrappedUser.verified==1 && !isSubscribed" >
         <input type="hidden" name="itemprice" value="500" />
-        <button ng-show="bootstrappedUser.verified==1" type="submit" class="btn btn-success"><i class="fa fa-paypal"></i> Pay with Paypal ($500) </button>
+        <div class="alert text-danger" role="alert" >
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            You don't have active subscription.
+            <span><button type="submit" class="btn btn-success"><i class="fa fa-paypal"></i> Pay with Paypal ($500) </button></span>
+        </div>
+
     </form>
 
 </section>
